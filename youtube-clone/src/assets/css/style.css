@@ -1,4 +1,7 @@
 /* css variables */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --primary: #ff0000;
   --primary-gradient: Linear-gradient(135deg, #ff0000, #ff4d4d);
@@ -76,6 +79,63 @@ body.light-theme {
   background: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid var(--light-border);
 }
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--dark-text);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+.menu-toggle:hover {
+  background: var(--glass);
+}
+.light-theme .menu-toggle {
+  color: var(--light-text);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.logo-icon {
+  background: var(--primary-gradient);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 /* sidebar -sleek modern design -made sticky */
 .sidebar {
   grid-area: sidebar;
