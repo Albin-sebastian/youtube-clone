@@ -8,7 +8,7 @@
   --dark-bg: #0f0f0f;
   --dark-border: #333;
   --dark-card: #1f1f1f;
-  --dark-text: #1f1f1f;
+  --dark-text: #f1f1f1;
   --dark-text-secondary: #aaa;
   --light-bg: #f9f9f9;
   --light-card: #ffffff;
@@ -128,6 +128,45 @@ body.light-theme {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
+}
+
+/*search bar  */
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 0 1 680px;
+  max-width: 680px;
+}
+.search-container input {
+  width: 100%;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--dark-border);
+  border-radius: 30px 0 0 30px;
+  height: 44px;
+  color: var(--dark-text);
+  transition: var(--transition);
+}
+.light-theme .search-container input {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--light-border);
+  color: var(--light-text);
+}
+.search-container input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.12);
+}
+.search-btn {
+  background: var(--glass);
+  border: 1px solid var(--dark-border);
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  padding: 10px 24px;
+  cursor: pointer;
+  height: 44px;
+  color: var(--dark-text);
+  transition: var(--transition);
 }
 
 .header-right {
